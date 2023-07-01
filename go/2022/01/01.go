@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	input, _ := os.ReadFile("01.input")
+	input, _ := os.ReadFile("../input/2022/01.input")
 	chunks := strings.Split(strings.Trim(string(input), "\n"), "\n\n")
 
 	calories := make([]int, len(chunks))

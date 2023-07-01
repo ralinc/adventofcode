@@ -43,7 +43,7 @@ func rearrange(isNewCrane bool) string {
 }
 
 func parseInput() ([][]byte, [][]int) {
-	input, _ := os.ReadFile("05.input")
+	input, _ := os.ReadFile("../input/2022/05.input")
 	parts := strings.Split(strings.Trim(string(input), "\n"), "\n\n")
 	starting := strings.Split(parts[0], "\n")
 	procedure := strings.Split(parts[1], "\n")

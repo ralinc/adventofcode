@@ -14,7 +14,7 @@ func main() {
 }
 
 func read() []string {
-	input, _ := os.ReadFile("03.input")
+	input, _ := os.ReadFile("../input/2022/03.input")
 	return strings.Split(strings.Trim(string(input), "\n"), "\n")
 }
 

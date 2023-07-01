@@ -33,7 +33,7 @@ func move(a int, outcome int) int {
 }
 
 func main() {
-	input, _ := os.ReadFile("02.input")
+	input, _ := os.ReadFile("../input/2022/02.input")
 	lines := strings.Split(strings.Trim(string(input), "\n"), "\n")
 
 	games := make([][2]int, len(lines))

@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	input, _ := os.ReadFile("04.input")
+	input, _ := os.ReadFile("../input/2022/04.input")
 	assignments := strings.Split(strings.Trim(string(input), "\n"), "\n")
 
 	var first, second int
