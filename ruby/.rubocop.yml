@@ -1,0 +1,132 @@
+AllCops:
+  NewCops: enable
+  SuggestExtensions: false
+
+Layout/ClosingParenthesisIndentation: {Enabled: true}
+Layout/DefEndAlignment: {EnforcedStyleAlignWith: start_of_line}
+Layout/DotPosition: {EnforcedStyle: trailing}
+Layout/EmptyLineBetweenDefs:
+  AllowAdjacentOneLineDefs: true
+Layout/EndOfLine: {EnforcedStyle: lf}
+Layout/LineLength:
+  Max: 120
+  AllowURI: true
+Layout/MultilineAssignmentLayout:
+  Enabled: true
+  EnforcedStyle: new_line
+Layout/LineContinuationLeadingSpace: {Enabled: false}
+Layout/LineEndStringConcatenationIndentation: {EnforcedStyle: aligned}
+Layout/MultilineMethodCallIndentation: {EnforcedStyle: indented}
+Layout/MultilineOperationIndentation: {EnforcedStyle: indented}
+Layout/SpaceInLambdaLiteral: {EnforcedStyle: require_space}
+Layout/SpaceInsideHashLiteralBraces: {EnforcedStyle: no_space}
+Layout/IndentationWidth:
+  AllowedPatterns:
+    - 'monitored .*, def '
+
+Lint/AmbiguousRange: {Enabled: false}
+Lint/AmbiguousBlockAssociation: {Enabled: false}
+Lint/AmbiguousOperatorPrecedence: {Enabled: false}
+Lint/DuplicateBranch: {Enabled: false}
+Lint/UnusedBlockArgument: {AllowUnusedKeywordArguments: true}
+Lint/UnusedMethodArgument: {AllowUnusedKeywordArguments: true}
+Lint/MissingSuper: {AllowedParentClasses: [FormObject]}
+Lint/RedundantSafeNavigation: {Enabled: false}
+Lint/SafeNavigationConsistency: {Enabled: false}
+Lint/UselessConstantScoping: {Enabled: false}
+
+Metrics/AbcSize: {Enabled: false}
+Metrics/BlockLength: {Enabled: false}
+Metrics/ClassLength: {Enabled: false}
+Metrics/CyclomaticComplexity: {Enabled: false}
+Metrics/MethodLength: {Max: 80, CountAsOne: [heredoc]}
+Metrics/ModuleLength:
+  Max: 500
+  Exclude:
+    - 'spec/**/*'
+    - 'test/**/*'
+
+Metrics/ParameterLists: {CountKeywordArgs: false, Max: 6}
+Metrics/PerceivedComplexity: {Enabled: false}
+
+Naming/FileName: {Enabled: false}
+Naming/BlockForwarding: {Enabled: false}
+Naming/HeredocDelimiterNaming: {Enabled: false}
+Naming/MethodParameterName: {Enabled: false}
+Naming/MemoizedInstanceVariableName:
+  Exclude:
+    - 'app/controllers/**/*'
+Naming/PredicateName:
+  ForbiddenPrefixes: [is_]
+  Exclude:
+    - 'app/graphql/graph/relay/*_connection.rb'
+    - 'app/graphql/graph/types/*_type.rb'
+    - 'app/graphql/graph/receipt_search/elastic_request.rb'
+Naming/RescuedExceptionsVariableName: {PreferredName: error}
+
+Style/AsciiComments: {Enabled: false}
+Style/ArgumentsForwarding: {Enabled: false}
+Style/AccessModifierDeclarations: {Enabled: false}
+Style/ArrayIntersect: {Enabled: false}
+Style/Documentation: {Enabled: false}
+Style/EmptyMethod: {Enabled: false}
+Style/ExplicitBlockArgument: {Enabled: false}
+Style/FetchEnvVar: {Enabled: false}
+Style/FloatDivision: {Enabled: false}
+Style/HashEachMethods: {Enabled: false}
+Style/HashSyntax: {EnforcedShorthandSyntax: always}
+Style/HashTransformKeys: {Enabled: true}
+Style/HashTransformValues: {Enabled: true}
+Style/GlobalStdStream: {Enabled: false}
+Style/GuardClause: {Enabled: false}
+Style/FormatStringToken: {Enabled: false}
+Style/MapToHash: {Enabled: false}
+Style/MutableConstant: {Enabled: false}
+Style/ModuleFunction: {Enabled: false}
+Style/NumericPredicate: {Enabled: false}
+Style/PerlBackrefs: {Enabled: false}
+Style/SafeNavigationChainLength: {Enabled: false}
+Style/SpecialGlobalVars: {Enabled: false}
+Style/TrailingCommaInArguments: {EnforcedStyleForMultiline: comma}
+Style/TrailingCommaInArrayLiteral: {EnforcedStyleForMultiline: comma}
+Style/TrailingCommaInHashLiteral: {EnforcedStyleForMultiline: comma}
+Style/DoubleNegation: {Enabled: false}
+Style/FrozenStringLiteralComment: {Enabled: false}
+Style/SingleLineBlockParams: {Enabled: false}
+Style/SignalException: {EnforcedStyle: only_raise}
+Style/LambdaCall: {EnforcedStyle: braces}
+Style/MapIntoArray: {Enabled: false}
+Style/MethodCallWithArgsParentheses:
+  Enabled: true
+  EnforcedStyle: omit_parentheses
+  AllowParenthesesInMultilineCall: true
+  AllowParenthesesInChaining: true
+  AllowParenthesesInCamelCaseMethod: true
+Style/MultilineBlockChain: {Enabled: false}
+Style/NumberedParameters: {Enabled: false}
+Style/NumberedParametersLimit: {Enabled: false}
+Style/OpenStructUse: {Enabled: false}
+Style/SuperWithArgsParentheses: {Enabled: false}
+Style/SymbolArray: {Enabled: true}
+Style/RedundantInitialize: {Enabled: false}
+Style/ReturnNilInPredicateMethodDefinition: {Enabled: false}
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    '%i': '()'
+    '%I': '()'
+    '%w': '()'
+    '%W': '()'
+Style/TrivialAccessors:
+  Exclude:
+    - db/seeds/**/*.rb
+Style/OptionalBooleanParameter:
+  Enabled: true
+  AllowedMethods:
+    - perform
+Style/YodaCondition: {EnforcedStyle: forbid_for_equality_operators_only}
+Style/Lambda: {Enabled: false}
+Style/ZeroLengthPredicate: {Enabled: false}
+Style/ComparableBetween: {Enabled: false}
+Style/MultipleComparison: {Enabled: false}
+Style/RedundantParentheses: {Enabled: false}
+Style/RedundantCondition: {Enabled: false}
